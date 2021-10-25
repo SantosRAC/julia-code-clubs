@@ -7,8 +7,11 @@ alpha = 11
 println(alpha)
 
 #Imprimindo o que todo programador imprime quando aprende uma nova linguagem de programação
+# Strings, que veremos mais adiante, devem ser declaradas usando aspas duplas
 println("Hello, World!")
-println('Hello, World!')
+
+# Este código não vai funcionar:
+#println('Hello, World!')
 
 # Definindo strings
 exampleString1 = "Fernanda"
