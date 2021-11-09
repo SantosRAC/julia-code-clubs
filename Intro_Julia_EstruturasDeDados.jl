@@ -2,6 +2,7 @@
 
 #\alpha = 10
 alpha = 11
+nome = 'Qualquer coisa'
 
 #println(\alpha)
 println(alpha)
