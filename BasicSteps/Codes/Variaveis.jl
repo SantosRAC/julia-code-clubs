@@ -29,6 +29,9 @@ _1numero = 4
 # Podem apresentar acentos, mas eu NÃO recomendo
 número = 4
 
+# Ver convenção sobre o uso de underline em Julia
+# ??????
+
 # Não é possível atribuir variáveis com espaço
 numero 1 = 4
 # É possível, no entanto, usar "underscore" ("underline") para suprir a necessidade de um espaço
