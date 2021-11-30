@@ -8,12 +8,20 @@
 # Strings, que veremos mais adiante, devem ser declaradas usando aspas duplas
 println("Hello, World!")
 
+#
+println(4)
+
 # Este código não vai funcionar:
 println('Hello, World!')
+
+# ?????
+println("Hello, World!')
 
 # Regras para definição de variáveis
 # Elas DEVEM começar com letras
 numero = 4
+# Atribuindo um novo valor à mesma variável
+numero = 5
 # Podem ter números, mas NÃO PODEM começar com número
 1numero = 4
 # O underscore pode ser usado para começar o nome da variável
