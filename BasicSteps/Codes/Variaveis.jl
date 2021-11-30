@@ -43,3 +43,7 @@ nomeSujeito = "Renato"
 nomeDoSujeito = "Renato"
 nome_sujeito = "Renato"
 
+# Caracteres especiais
+# Neste caso, a convenção é semelhante ao LaTeX, usando a barra invertida e o nome do caractere (abaixo, uma letra grega como exemplo)
+\beta = 5
+\omega = 5
