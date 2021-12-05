@@ -105,7 +105,7 @@ x % y  # 0
 # retornando sempre um inteiro. Dá para digitar ÷ digitando \div e apertando
 # TAB. 
 # Nota: Uma peculiaridade é que esse inteiro será representado como um float
-# (tendo um ".0" no final, se um dos operandos for um float). Exemplos devem
+# (tendo um ".0" no final), se um dos operandos for um float. Exemplos devem
 # ajudar bastante:
 y ÷ x  # 0
 3433 / 42  # 81.73809523809524
@@ -203,8 +203,8 @@ sqrt(x)  # Raiz quadrada (square root) de x. Escrever √x também funciona.
 cbrt(x)  # Raiz cúbica (cube root) de x. Escrever ∛x também funciona.
 hypot(x, y)	# Hipotenusa quando os catetos têm comprimentos x e y.
 log(x)	# Logaritmo natural de x (base e).
-log2(x)  # Logaritmo na base 2 de x
-log10(x)  # Logaritmo na base 10 de x
+log2(x)  # Logaritmo na base 2 de x.
+log10(x)  # Logaritmo na base 10 de x.
 log(b, x)  # Logaritmo na base b de x.
 
 #= Entre outras, inclusive diversas funções trigonométricas:
