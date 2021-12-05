@@ -56,10 +56,10 @@ ja, o ponto "flutua" dependendo da posição que escolhemos para ele:
 .5  # ...e antes também (isso é igual a 0.5).
 
 # Pode-se usar a notação científica quando conveniente.
-4.67e12  # Significa 4.67×10^(12).
+4.67e12  # Significa 4.67×10¹².
 1e10  # Ainda é um float.
 1.00e10  # A mesma coisa que o anterior.
-6.022_140_76e²³  # Número de Avogadro, veja que o _ também funciona aqui.
+6.022_140_76e23  # Número de Avogadro, veja que o _ também funciona aqui.
 2.5e-4  # A mesma coisa que 0.00025.
 
 # Mas representar números não seria tão útil se a gente não pudesse usá-los em
