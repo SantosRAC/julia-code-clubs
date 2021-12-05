@@ -29,10 +29,11 @@ cas simples. Julia se torna uma calculadora científica.
 10_2_030_04  # Não sei para que se usaria, mas funciona.
 
 #= Nas linguagens de programação, os números decimais são muitas vezes chamados
-de "floats", que vem de "floating-point numbers". Esse nome surge por esses nú-
-meros serem armazenados em duas partes, uma com o valor numérico, digamos
-4237819592, e outra com a posição do ponto, o separador decimal. Ou seja, o pon-
-to "flutua" dependendo da posição que escolhemos para ele: 
+de "floats", que vem de "floating-point numbers". Não precisaremos nos preocupar
+com isso, mas, a título de curiosidade, esse nome surge por esses números serem
+armazenados na memória do computador em duas partes, uma com o valor numérico,
+digamos 4237819592, e outra com a posição do ponto, o separador decimal. Ou se-
+ja, o ponto "flutua" dependendo da posição que escolhemos para ele: 
 
     4.237819592
     42.37819592

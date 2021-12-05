@@ -15,7 +15,8 @@ promisso e só caso esteja realmente interessada(o).
   * [https://docs.julialang.org/en/v1/manual/complex-and-rational-numbers/]
 =#
 
-# Uma outra coisa interessante é uma notação de frações, ou seja, números racionais, que Julia tem, usando o operador //:
+# Uma outra coisa interessante é uma notação de frações, ou seja, números racio-
+# nais, que Julia tem, usando o operador //:
 2//3
 # Isso possibilita a representação de dízimas periódicas sem perda de precisão.
 
@@ -49,13 +50,20 @@ float(3//4)  # 0.75
 5//8 * 3//12  # 5//32
 6//5 / 10//7  # 21//25
 
-# Como acabamos descobrindo por acaso na semana passada, a Julia permite que a gente coloque um coeficiente imediatamente antes da variável para multiplicá-la. Isso deixa a sintaxe de algumas expressões mais limpa:
+# Como acabamos descobrindo por acaso na semana passada, a Julia permite que a
+# gente coloque um coeficiente imediatamente antes da variável para multiplicá-
+# -la. Isso deixa a sintaxe de algumas expressões mais limpa:
 x = 3
 2x^2 - 3x + 1  # 10
 1.5x^2 - .5x + 1  # 13.0
 2^2x  # 64
 
-# Note que a multiplicação pelo coeficiente nessa notação é executada antes das somas/subtrações e multiplicações/divisões explícitas, e o comportamento com a exponenciação depende se o coeficiente multiplica o valor da direita ou esquerda. Seguem mais alguns exemplos:
+#= Note que a multiplicação pelo coeficiente nessa notação é executada antes das
+somas/subtrações e multiplicações/divisões explícitas, e o comportamento com a
+exponenciação depende se o coeficiente multiplica o valor da direita ou esquer-
+da. =#
+
+# Seguem mais alguns exemplos:
 -2x == (-2) * x
 √2x == (√2) * x
 2^3x == 2^(3 * x)
@@ -66,18 +74,21 @@ x = 3
 2(x-1)^2 - 3(x-1) + 1  # 3
 (x-1)x  # 6
 
-# Mas não quando as duas expressões têm parênteses ao mesmo tempo, ou quando há uma variável logo antes do parêntese:
+# Mas não quando as duas expressões têm parênteses ao mesmo tempo, ou quando há
+# uma variável logo antes do parêntese:
 (x-1)(x+1)  # ERROR: MethodError: objects of type Int64 are not callable
 x(x+1)  # ERROR: MethodError: objects of type Int64 are not callable
 
-# Quando combinada com a constante im definida em Julia como a unidade imaginária, a notação também permite que números complexos sejam escritos de forma usual:
+# Quando combinada com a constante im definida em Julia como a unidade imaginá-
+# ria, a notação também permite que números complexos sejam escritos de forma
+# usual:
 (2 + 3im) - 1  # 1 + 3im
 (2 + 3im) - 0.5im  # 2.0 + 2.5im
 0.75(1 + 2im)  # 0.75 + 1.5im
 (1 - 3im) / (2 + 2im)  # -0.5 - 1.0im
 2im^2  # -2 + 0im
 
-# E há, naturalmente, algumas funções úteis nesses casos.
+# E há também, naturalmente, algumas funções úteis nesses casos.
 z = 1 + 2im
 real(z)  # 1 (parte real de z)
 imag(z)  # 2 (parte imaginária de z)
