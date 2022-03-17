@@ -12,13 +12,6 @@
  * Todos os códigos DEVEM ser escritos em Português; isso facilitará a inclusão de colegas do Brasil (falantes de Português / aqueles cuja língua nativa é Português)
  * Aqueles com frequência regular (toda semana) terão acesso a uma pasta do Google Drive (com livros, tutoriais e materiais adicionais para contribuir para a formação / alfabetização em programação) e acesso de edição no repositório do Github.
 
-## Tópicos já trabalhados
-
- * Variáveis
- * Operações numéricas
- * Condicionais
-
-
 ## Referências
 
  * Bakshi, Tanmay. Tanmay Teaches Julia for Beginners: A Springboard to Machine Learning for All Ages. McGraw-Hill Education, 2020.
