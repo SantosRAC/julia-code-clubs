@@ -16,7 +16,7 @@ cd(raw"/home/santosrac/Repositories/julia-code-clubs-ufabc/DataAnalysis")
 print(pwd(),"\n")
 
 # Importing csv file and creating a dataframe
-genome_size = DataFrame(CSV.File("genome_sizes.csv"))
+genome_info = DataFrame(CSV.File("genome_information.csv"))
 
 #=
 # Recover
@@ -48,6 +48,10 @@ print(genome_size."Genome_size","\n")
 print(genome_size[:, "Genome_size"],"\n")
 =#
 
-data = bar(; y=genome_size.Genome_size, x=genome_size.Species)
-plot1 = plot(data)
-savefig(plot1, "file.png")
+# Plotting genome size information
+genome_data = bar(; y=genome_info.Genome_size, x=genome_info.Strain_Cultivar)
+plot_genome_sizes = plot(genome_data)
+savefig(plot_genome_sizes, "genome_sizes_all_strains.png")
+
+
+
