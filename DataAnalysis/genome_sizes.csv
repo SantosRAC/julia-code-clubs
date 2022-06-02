@@ -1,11 +1,19 @@
-Species,Genome_size
-Kalmanozyma brasiliensis,17.32
-Aspergillus fumigatus,28.47
-Aspergillus fumigatiaffinis,33.81
-Aspergillus lentulus,31.01
-Aspergillus nidulans,30.60
-Aspergillus niger,35.70
-Phytophthora infestans,203.29
-Setaria viridis,396.45
-Setaria italica,441.70
-Sorghum bicolor,715.37
+Species,Strain_Cultivar,Genome_size
+Saccharomyces cerevisiae,RedStar,11.64
+Saccharomyces cerevisiae,CEN.PK113-7D,12.0
+Saccharomyces cerevisiae,CBS2919,
+Saccharomyces cereivisiae,S288C,11.82
+Kalmanozyma brasiliensis,GHG001,17.32
+Aspergillus fumigatus,Af293,29.38
+Aspergillus fumigatus,A1163,29.21
+Aspergillus fumigatus,CNM-CM8686,28.17
+Aspergillus fumigatiaffinis,CNM-CM6805,33.47
+Aspergillus lentulus,CNM-CM7927,31.61
+Aspergillus lentulus,IFM 54703,30.77
+Aspergillus nidulans,FGSC A4,30.27
+Aspergillus niger,CBS 513.88,34
+Phytophthora infestans,T30-4,228.54
+Setaria viridis,A10,395.87
+Setaria viridis,ME034v,397.03
+Setaria italica,Yugu1,405.87
+Sorghum bicolor,BTx623,709.34
