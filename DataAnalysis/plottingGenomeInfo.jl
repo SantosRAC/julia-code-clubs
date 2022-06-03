@@ -2,14 +2,17 @@
 
 using DataFrames
 using CSV
+
 #=
 #Checking if Plots is installed
 "Plots" ∈ keys(Pkg.project().dependencies)
 #Installing a package (e.g., Plots)
 Pkg.add("Plots")
 using Plots
-=#
 using PlotlyJS
+=#
+
+using CairoMakie
 
 # Setting the path to working dir
 cd(raw"/home/santosrac/Repositories/julia-code-clubs-ufabc/DataAnalysis")
@@ -28,8 +31,11 @@ print(size(genome_size),"\n")
 print(first(genome_size, 3),"\n")
 print(last(genome_size, 3),"\n")
 
+=#
 # Recover
-print(eltype.(eachcol(genome_size)),"\n")
+print(eltype.(eachcol(genome_info)),"\n")
+# Type[String31, String15, Union{Missing, Float64}]
+#=
 
 # Printing column names
 print(names(genome_size),"\n")
@@ -48,10 +54,21 @@ print(genome_size."Genome_size","\n")
 print(genome_size[:, "Genome_size"],"\n")
 =#
 
+
+
 # Plotting genome size information
-genome_data = bar(; y=genome_info.Genome_size, x=genome_info.Strain_Cultivar)
-plot_genome_sizes = plot(genome_data)
-savefig(plot_genome_sizes, "genome_sizes_all_strains.png")
+fig = Figure()
+ax = Axis(fig[1, 1], xticks = (1:18, genome_info.Strain_Cultivar),
+    xlabel = "Varieties/Strains/Cultivars", ylabel = "Genome sizes (Mb)",
+    title = "Genome sizes", xticklabelrotation = pi/4)
+
+xs = 1:1:length(genome_info.Genome_size)
+ys = genome_info.Genome_size
+
+#genome_data = barplot!(genome_info.Strain_Cultivar, genome_info.Genome_size)
+barplot!(ax, xs, ys)
+
+save("genome_sizes_all_strains.png", fig)
 
 
 
